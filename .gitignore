@@ -3,6 +3,13 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .kotlin
+.gitattributes
+.mvn
+HELP.md
+mvnw
+mvnw.cmd
+.gitattributes
+.idea
 
 ### Eclipse ###
 .apt_generated
