@@ -9,7 +9,7 @@ import java.util.List;
 
 public class TextCompositeImpl implements TextComposite {
   private final ComponentType type;
-  private final List<TextComponent> components = new ArrayList<TextComponent>();
+  private final List<TextComponent> components = new ArrayList<>();
 
   public TextCompositeImpl(ComponentType type) {
     this.type = type;

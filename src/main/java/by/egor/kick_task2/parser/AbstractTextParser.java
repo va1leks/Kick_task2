@@ -1,7 +1,6 @@
 package by.egor.kick_task2.parser;
 
 import by.egor.kick_task2.composite.TextComposite;
-import by.egor.kick_task2.type.ComponentType;
 
 public abstract class AbstractTextParser {
 

@@ -12,6 +12,7 @@ public class LexemeParser extends AbstractTextParser {
 
   private static final String WORD_PUNCTUATION_REGEX = "([\\p{L}\\p{N}-]+)|([.!?，,;:'\"«»()\\[\\]]+)";
   private static final String PUNCTUATION_REGEX = "[.!?，,;:'\"«»()\\[\\]]+";
+
   @Override
   public TextComposite parse(String text) {
     TextComposite lexeme = new TextCompositeImpl(ComponentType.LEXEME);

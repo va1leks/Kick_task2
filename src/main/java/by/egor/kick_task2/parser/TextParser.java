@@ -10,7 +10,7 @@ public class TextParser extends AbstractTextParser {
    private final ComponentType type;
    private final String COMMON_PARAGRAPH_REGEX;
 
-   public TextParser(ComponentType type, String commonParagraphRegex) {
+  TextParser(ComponentType type, String commonParagraphRegex) {
     this.type = type;
     COMMON_PARAGRAPH_REGEX = commonParagraphRegex;
   }
