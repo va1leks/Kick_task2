@@ -12,9 +12,4 @@ public abstract class AbstractTextParser {
   }
 
   public abstract TextComposite parse(String text);
-
-  protected TextComposite passToNextParser(String text) {
-    return nextParser.parse(text);
-  }
-
 }

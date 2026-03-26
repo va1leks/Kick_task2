@@ -5,7 +5,6 @@ import by.egor.kick_task2.type.ComponentType;
 
 public class Letter implements TextComponent {
 
-
   private final char letter;
 
   public Letter(char letter) {

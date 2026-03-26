@@ -8,17 +8,17 @@ import by.egor.kick_task2.type.ComponentType;
 public class TextParser extends AbstractTextParser {
 
    private final ComponentType type;
-   private final String COMMON_PARAGRAPH_REGEX;
+   private final String COMMON_REGEX;
 
-  TextParser(ComponentType type, String commonParagraphRegex) {
+  public TextParser(ComponentType type, String commonParagraphRegex) {
     this.type = type;
-    COMMON_PARAGRAPH_REGEX = commonParagraphRegex;
+    COMMON_REGEX = commonParagraphRegex;
   }
 
   @Override
   public TextComposite parse(String text) {
     TextComposite textResult = new TextCompositeImpl(type);
-    String[] lines = text.split(COMMON_PARAGRAPH_REGEX);
+    String[] lines = text.split(COMMON_REGEX);
 
     for (String line : lines) {
       if (line.trim().isEmpty()) {

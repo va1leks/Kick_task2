@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TextCompositeImpl implements TextComposite {
+
   private final ComponentType type;
   private final List<TextComponent> components = new ArrayList<>();
 
@@ -55,8 +56,6 @@ public class TextCompositeImpl implements TextComposite {
   public ComponentType getType() {
     return type;
   }
-
-
 
   @Override
   public int getCount() {
