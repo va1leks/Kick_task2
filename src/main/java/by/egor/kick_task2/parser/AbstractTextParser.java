@@ -6,9 +6,8 @@ public abstract class AbstractTextParser {
 
   protected AbstractTextParser nextParser;
 
-  public AbstractTextParser setNextParser(AbstractTextParser nextParser ) {
+  public void setNextParser(AbstractTextParser nextParser ) {
     this.nextParser = nextParser;
-    return nextParser;
   }
 
   public abstract TextComposite parse(String text);

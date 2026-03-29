@@ -1,6 +1,6 @@
 package by.egor.kick_task2.service;
 
-import by.egor.kick_task2.comparator.MyComparator;
+import by.egor.kick_task2.comparator.TextComparator;
 import by.egor.kick_task2.composite.TextComponent;
 import by.egor.kick_task2.composite.TextComposite;
 
@@ -11,7 +11,7 @@ public class SortService {
 
   public List<TextComponent> sortText (TextComposite composite) {
     List<TextComponent> sentences = collectSentences(composite);
-    sentences.sort(MyComparator.BY_SENTENCES_COUNT);
+    sentences.sort(TextComparator.BY_SENTENCES_COUNT);
     return sentences;
   }
 

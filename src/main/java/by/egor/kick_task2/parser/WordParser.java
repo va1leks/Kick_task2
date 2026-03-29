@@ -8,11 +8,13 @@ import by.egor.kick_task2.type.ComponentType;
 
 public class WordParser extends AbstractTextParser {
 
+  private static final String HYPHEN_OR_APOSTROPHE = "[-']";
+
   @Override
   public TextComposite parse(String text) {
     TextComposite word = new TextCompositeImpl(ComponentType.WORD);
     for (char ch : text.toCharArray()) {
-      if(String.valueOf(ch).matches("[-']"))
+      if(String.valueOf(ch).matches(HYPHEN_OR_APOSTROPHE))
       {
         word.add(new Symbol(ch));
         continue;

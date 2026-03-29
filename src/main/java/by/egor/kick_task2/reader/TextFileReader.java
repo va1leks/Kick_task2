@@ -1,6 +1,6 @@
 package by.egor.kick_task2.reader;
 
-import by.egor.kick_task2.exception.MyException;
+import by.egor.kick_task2.exception.TextException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -8,11 +8,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class MyFileReader {
+public class TextFileReader {
 
-  Logger logger = LoggerFactory.getLogger(MyFileReader.class);
+  Logger logger = LoggerFactory.getLogger(TextFileReader.class);
 
-  public String readAll(String filePath) throws MyException {
+  public String readAll(String filePath) throws TextException {
     try {
       String content = Files.readString(Paths.get(filePath));
       logger.info(content);
@@ -20,7 +20,7 @@ public class MyFileReader {
 
       return content.trim();
     } catch (IOException e) {
-      throw new MyException(e);
+      throw new TextException(e);
     }
   }
 }

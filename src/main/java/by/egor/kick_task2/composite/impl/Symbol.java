@@ -12,11 +12,6 @@ public class Symbol implements TextComponent {
   }
 
   @Override
-  public String getText() {
-    return String.valueOf(symbol);
-  }
-
-  @Override
   public ComponentType getType() {
     return ComponentType.SYMBOL;
   }
@@ -28,6 +23,6 @@ public class Symbol implements TextComponent {
 
   @Override
   public String toString() {
-    return getText();
+    return String.valueOf(symbol);
   }
 }

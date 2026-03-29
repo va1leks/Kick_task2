@@ -5,7 +5,7 @@ import by.egor.kick_task2.composite.TextComposite;
 
 import java.util.Comparator;
 
-public enum MyComparator implements Comparator<TextComponent> {
+public enum TextComparator implements Comparator<TextComponent> {
 
   BY_SENTENCES_COUNT {
     @Override

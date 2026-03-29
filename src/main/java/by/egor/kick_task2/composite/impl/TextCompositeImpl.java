@@ -38,21 +38,6 @@ public class TextCompositeImpl implements TextComposite {
   }
 
   @Override
-  public String getText() {
-    StringBuilder text = new StringBuilder();
-    for (TextComponent component : components) {
-      text.append(component.getText());
-    }
-    if(type == ComponentType.LEXEME) {
-      text.append(" ");
-    }
-    if(type == ComponentType.PARAGRAPH ) {
-      text.append("\n");
-    }
-    return text.toString();
-  }
-
-  @Override
   public ComponentType getType() {
     return type;
   }
@@ -68,6 +53,16 @@ public class TextCompositeImpl implements TextComposite {
 
   @Override
   public String toString() {
-    return getText();
+    StringBuilder text = new StringBuilder();
+    for (TextComponent component : components) {
+      text.append(component.toString());
+    }
+    if(type == ComponentType.LEXEME) {
+      text.append(" ");
+    }
+    if(type == ComponentType.PARAGRAPH ) {
+      text.append("\n");
+    }
+    return text.toString();
   }
 }

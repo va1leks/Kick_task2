@@ -12,11 +12,6 @@ public class Letter implements TextComponent {
   }
 
   @Override
-  public String getText() {
-    return String.valueOf(letter);
-  }
-
-  @Override
   public ComponentType getType() {
     return ComponentType.LETTER;
   }
@@ -28,7 +23,7 @@ public class Letter implements TextComponent {
 
   @Override
   public String toString() {
-    return getText();
+    return String.valueOf(letter);
   }
 
 }
